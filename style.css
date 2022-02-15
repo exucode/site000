@@ -1,0 +1,128 @@
+
+html{
+  /*Set some global colors here for quick re-coloring of stuff!*/
+  --bg-color: DarkGreen;
+  --darker-color: purple;
+  --lighter-color: DarkTurquoise;
+  --accent-color: Lime;
+
+  --sidebar-width:140px;
+  background-color: var(--bg-color);
+  background-image: url(); /*add image url for tiled background*/
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+ 
+body {
+  color: black; /*text color*/
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-color: var(--darker-color);
+}
+
+header img{
+  display: block;
+  max-height: 400px;
+  margin: auto;
+}
+
+
+p {padding: 2px 6px 2px;}
+
+a:link{
+  color: var(--darker-color);
+}
+
+a:visited{
+  color: var(--darker-color);
+}
+
+
+nav{
+  width: var(--sidebar-width);
+  position: absolute;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: var(--lighter-color);
+}
+
+.divider{
+  height: 5px;
+  width: 100%;
+  background-color: var(--accent-color);
+}
+
+main{
+  background-color: var(--lighter-color);
+  margin-left: calc( var(--sidebar-width) + 30px);
+  margin-right: calc( var(--sidebar-width) /2);
+  padding: 25px;
+}
+
+
+.container{
+  display: flex;
+}
+
+.picture img {
+  max-width: 250px;
+  flex-shrink: 0;
+  float: left;
+  margin: 5px;
+}
+
+.description {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--lighter-color);
+  border: 2px solid var(--darker-color);
+}
+
+.gallery img {
+  border: 1px solid var(--accent-color); 
+  padding: 5px; 
+  height: 200px;
+}
+
+
+table {
+  table-layout:fixed;
+  border: 5px solid;/*table outline*/
+  border-spacing:2px;
+  margin: auto;
+  width: 40%;
+  min-width: 300px;
+  background-color: var(--lighter-color);
+}
+
+th{
+  text-align: center;
+  border: 1px solid;
+  border-spacing:2px;
+}
+
+td{
+  text-align: left;
+  border: 1px solid;
+  border-spacing:2px;
+  padding: 2px 6px 2px;
+}
+
+footer {
+  font-size: 12px;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  height: 24px;
+}
